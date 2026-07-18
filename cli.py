@@ -95,7 +95,7 @@ while True:
         if price:
             data["price"] = float(price)
 
-        response = requests.patch(
+        response = requests.put(
             f"{BASE_URL}/items/{item_id}",
             json=data
         )
